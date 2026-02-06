@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Bumper : MonoBehaviour
     {
-        [SerializeField] float _bumperForce = 15, _litDuration = 0.2f;
+        [SerializeField] float _bumperForce = 6, _litDuration = 0.2f;
         [SerializeField] private Color _litColour = Color.darkRed;
 
         private bool _isLit = false;
