@@ -18,13 +18,11 @@ public class DeathZone : MonoBehaviour
     //StartCoroutine must be passed a method that returns an IEnumerator
     private IEnumerator RespawnBall(GameObject ball)
     {
-        Debug.Log("That's crazy... but it just might work!");
         yield return new WaitForSeconds(2);
         Rigidbody2D ballRB = ball.GetComponent<Rigidbody2D>();
         ballRB.linearVelocity = Vector2.zero;
         ballRB.angularVelocity = 0;
         ball.transform.position = _spawnPoint.position;
-        Debug.Log("That move just cost us 50 children.");
     }
 }
 
