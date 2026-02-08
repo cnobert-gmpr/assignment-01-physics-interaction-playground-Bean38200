@@ -15,7 +15,6 @@ public class DeathZone : MonoBehaviour
 
     }
 
-    //StartCoroutine must be passed a method that returns an IEnumerator
     private IEnumerator RespawnBall(GameObject ball)
     {
         yield return new WaitForSeconds(2);
